@@ -1,0 +1,15 @@
+[submodule "ZZZ_UpdateLists"]
+	path = ZZZ_UpdateLists
+	url = ./ZZZ_UpdateLists/.git
+[submodule "MoreResourcesAtStart"]
+	path = MoreResourcesAtStart
+	url = ./MoreResourcesAtStart
+[submodule "BiggerFoodMachines"]
+	path = BiggerFoodMachines
+	url = ./BiggerFoodMachines
+[submodule "UnlockAllAtStart"]
+	path = UnlockAllAtStart
+	url = ./UnlockAllAtStart
+[submodule "AutoConnections"]
+	path = AutoConnections
+	url = ./AutoConnections
