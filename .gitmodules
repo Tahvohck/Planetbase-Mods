@@ -1,5 +1,5 @@
 [submodule "ZZZ_UpdateLists"]
-	path = ZZZ_UpdateLists
+	path = modhooker
 	url = ./ZZZ_UpdateLists/.git
 [submodule "MoreResourcesAtStart"]
 	path = MoreResourcesAtStart
