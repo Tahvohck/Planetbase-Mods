@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JPFarias", "JPFarias", "{0C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoConnections", "AutoConnections\AutoConnections.csproj", "{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modhooker", "modhooker\Modhooker.csproj", "{0428DD26-4864-42F4-9869-9ED19EA26B41}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2CB6ABBB-B002-461B-9824-7D3A905AB9C5}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
@@ -46,10 +44,6 @@ Global
 		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0428DD26-4864-42F4-9869-9ED19EA26B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0428DD26-4864-42F4-9869-9ED19EA26B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0428DD26-4864-42F4-9869-9ED19EA26B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0428DD26-4864-42F4-9869-9ED19EA26B41}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D3A0D0DE-6B30-4EB6-8D68-4985B2AD2530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D3A0D0DE-6B30-4EB6-8D68-4985B2AD2530}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3A0D0DE-6B30-4EB6-8D68-4985B2AD2530}.Release|Any CPU.ActiveCfg = Release|Any CPU
