@@ -15,4 +15,4 @@
 	url = https://github.com/Tahvohck/Planetbase-AutoConnections.git
 [submodule "_Utilities"]
 	path = _Utilities
-	url = ./_Utilities
+	url = https://github.com/Tahvohck/Planetbase-PBUtilities.git
