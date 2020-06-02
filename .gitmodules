@@ -6,7 +6,7 @@
 	url = ./MoreResourcesAtStart
 [submodule "BiggerFoodMachines"]
 	path = BiggerFoodMachines
-	url = ./BiggerFoodMachines
+	url = https://github.com/Tahvohck/Planetbase-BiggerFoodMachines.git
 [submodule "UnlockAllAtStart"]
 	path = UnlockAllAtStart
 	url = https://github.com/Tahvohck/Planetbase-UnlockMoreAtStart.git
