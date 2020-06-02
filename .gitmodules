@@ -9,7 +9,7 @@
 	url = ./BiggerFoodMachines
 [submodule "UnlockAllAtStart"]
 	path = UnlockAllAtStart
-	url = ./UnlockAllAtStart
+	url = https://github.com/Tahvohck/Planetbase-UnlockMoreAtStart.git
 [submodule "AutoConnections"]
 	path = AutoConnections
 	url = https://github.com/Tahvohck/Planetbase-AutoConnections.git
