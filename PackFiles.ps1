@@ -13,7 +13,7 @@ $Errors = @{
 }
 $copyItems = @(
 	"$OutputDir/$TargetFileName$TargetFileExt",
-	"$OutputDir/Info.json"
+	"$OutputDir/Properties/Info.json"
 )
 
 
