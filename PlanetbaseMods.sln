@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiggerFoodMachines", "Bigge
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JPFarias", "JPFarias", "{0C14CECF-82E2-4DB7-8949-434382E9A293}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoConnections", "AutoConnections\AutoConnections.csproj", "{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2CB6ABBB-B002-461B-9824-7D3A905AB9C5}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
@@ -21,6 +19,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityModManagerTest", "UnityModManagerTest\UnityModManagerTest.csproj", "{D3A0D0DE-6B30-4EB6-8D68-4985B2AD2530}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Utilities", "_Utilities\_Utilities.csproj", "{9D8AAB70-1302-465E-AC17-5AD525E3C4EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoConnections", "JPF_AutoConnections\AutoConnections.csproj", "{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,10 +40,6 @@ Global
 		{76F95653-396B-4B98-AA52-AAF3C7DD7BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76F95653-396B-4B98-AA52-AAF3C7DD7BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76F95653-396B-4B98-AA52-AAF3C7DD7BDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D3A0D0DE-6B30-4EB6-8D68-4985B2AD2530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D3A0D0DE-6B30-4EB6-8D68-4985B2AD2530}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3A0D0DE-6B30-4EB6-8D68-4985B2AD2530}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -52,6 +48,10 @@ Global
 		{9D8AAB70-1302-465E-AC17-5AD525E3C4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D8AAB70-1302-465E-AC17-5AD525E3C4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D8AAB70-1302-465E-AC17-5AD525E3C4EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

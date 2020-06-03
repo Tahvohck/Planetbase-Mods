@@ -11,7 +11,7 @@
 	path = UnlockAllAtStart
 	url = https://github.com/Tahvohck/Planetbase-UnlockMoreAtStart.git
 [submodule "AutoConnections"]
-	path = AutoConnections
+	path = JPF_AutoConnections
 	url = https://github.com/Tahvohck/Planetbase-AutoConnections.git
 [submodule "_Utilities"]
 	path = _Utilities
