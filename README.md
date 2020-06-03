@@ -15,7 +15,7 @@ Built on VS2017, C# version 7.3 .NET Framework version 3.5. Most mods reference 
 
 These mods are **not** built on the Patched version of the game. They use [Unity Mod Manager](
 https://github.com/newman55/unity-mods) instead. Support for Planetbase can be added to Unity Mod Manager
-via the (Powershell installation script I've written)[UnityModManagerSetup/install-planetbase-to-umm.ps1]
+via the Powershell installation script I've written (UnityModManagerSetup/install-planetbase-to-umm.ps1)
 just for that purpose. It will provide you with a nice file dialog to select UMM's configuration file and
 make a backup before editing it.
 
