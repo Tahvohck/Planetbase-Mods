@@ -1,5 +1,6 @@
 Add-Type -AssemblyName System.Windows.Forms
 
+Write-Host "IPTUMM v1.0.1"
 Write-Host "Asking for file location"
 
 $FileBrowser = New-Object Windows.Forms.OpenFileDialog -Property @{
