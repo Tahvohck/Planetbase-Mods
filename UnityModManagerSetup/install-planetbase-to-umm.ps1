@@ -15,7 +15,7 @@ $PBConfig = [xml]@'
 	<ModInfo>Info.json</ModInfo>
 	<GameExe>Planetbase.exe</GameExe>
 	<EntryPoint>[UnityEngine.UI.dll]UnityEngine.Canvas.cctor:Before</EntryPoint>
-	<StartingPoint>[Assembly-CSharp.dll]Planetbase.GameStateLogo.load:After</StartingPoint>
+	<StartingPoint>[Assembly-CSharp.dll]Planetbase.ErrorManager.init:Before</StartingPoint>
 	<MinimalManagerVersion>0.22.3</MinimalManagerVersion>
 </GameInfo>
 '@
