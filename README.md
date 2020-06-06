@@ -31,6 +31,9 @@ progress:
  - [ ] Auto Rotate Buildings
  - [ ] Building Aligner
  - [ ] Camera Overhaul
+   - [x] Basic integration (works but with issues)
+   - [ ] Bugfixing
+   - [ ] Remove debug code
  - [ ] CharacterCam
  - [ ] Free Building
  - [ ] Free Furnishing
