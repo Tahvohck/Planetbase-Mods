@@ -16,3 +16,6 @@
 [submodule "_Utilities"]
 	path = _Utilities
 	url = https://github.com/Tahvohck/Planetbase-PBUtilities.git
+[submodule "JPF_CameraOverhaul"]
+	path = JPF_CameraOverhaul
+	url = https://github.com/Tahvohck/Planetbase-CameraOverhaul.git
