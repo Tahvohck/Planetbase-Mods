@@ -22,7 +22,7 @@ make a backup before editing it.
 ## JPFarias
 João Farias was a major contributor to the planetbase modding community back in 2016, writing both the
 original patcher and a plethora of mods. Although their mods were impressive, they used the hacky Redirector
-mod to overwrite base game methods, and the VERY hacking Patcher to inject at all. Since then HarmonyLib has
+mod to overwrite base game methods, and the VERY hacky Patcher to inject at all. Since then HarmonyLib has
 come around and offered much more elegant ways to patch methods, and Unity Mod Manager has given us a more
 robust modloader. I am attempting to update JPF's mods to the cleaner methods. Here is the conversion
 progress:
