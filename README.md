@@ -33,7 +33,7 @@ progress:
  - [ ] Building Aligner
  - [ ] Camera Overhaul
    - [x] Basic integration (works but with issues)
-   - [ ] Fix skybox
+   - [x] Fix skybox
    - [ ] Bugfixing
    - [ ] Remove debug code
  - [ ] CharacterCam
