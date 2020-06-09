@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Utilities", "_Utilities\_U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoConnections", "JPF_AutoConnections\AutoConnections.csproj", "{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBModBuildHelper", "PBModBuildHelper\PBModBuildHelper.csproj", "{1913B66B-A2F8-45B4-8210-8D5086CFB0FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1913B66B-A2F8-45B4-8210-8D5086CFB0FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1913B66B-A2F8-45B4-8210-8D5086CFB0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1913B66B-A2F8-45B4-8210-8D5086CFB0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1913B66B-A2F8-45B4-8210-8D5086CFB0FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
