@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using Tahvohck_Mods;
 
 namespace PBModBuildHelper
 {
@@ -11,6 +9,7 @@ namespace PBModBuildHelper
     {
         public static string Path = "C:/";
         public static bool Verbose = false;
+        public readonly static Type entryTag = typeof(LoaderOptimizationAttribute);
     }
 
 
@@ -72,7 +71,7 @@ namespace PBModBuildHelper
                     m =>
                     m.GetCustomAttributes(false).ToList().FindAll(
                         a =>
-                        a.GetType().FullName == typeof(EntryMethodAttribute).FullName)
+                        a.GetType().FullName == Options.entryTag.FullName)
                     .ToList().Count > 0
                     );
 

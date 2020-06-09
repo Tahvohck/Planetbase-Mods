@@ -53,16 +53,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
     <None Include="Properties\version.t4" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\_Utilities\_Utilities.csproj">
-      <Project>{9d8aab70-1302-465e-ac17-5ad525e3c4ee}</Project>
-      <Name>_Utilities</Name>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AssemblyVersions.tt">
