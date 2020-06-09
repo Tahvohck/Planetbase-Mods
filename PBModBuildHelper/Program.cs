@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -22,7 +23,9 @@ namespace PBModBuildHelper
             }
 
             if (args.Contains("-V")) {
-                Version v = Assembly.GetExecutingAssembly().GetName().Version;
+                string v = FileVersionInfo
+                    .GetVersionInfo(Assembly.GetExecutingAssembly().Location)
+                    .FileVersion;
                 Console.WriteLine(v);
                 Environment.Exit(0);
             }

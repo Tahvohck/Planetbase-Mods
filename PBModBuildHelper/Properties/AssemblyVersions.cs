@@ -7,8 +7,8 @@
 //      Minor Version
 //      Build Number
 //      Revision (Year (2 digit) + Days since start of year)
-[assembly: AssemblyVersion("1.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.20160")]
+[assembly: AssemblyVersion("1.0.2")]
+[assembly: AssemblyFileVersion("1.0.2.20160")]
 [assembly: AssemblyInformationalVersion("1.0" +
 #if DEBUG
     " DEBUG")]

@@ -2,7 +2,7 @@
 	Version version = new Version(
 		major: 1,
 		minor: 0,
-		build: 0
+		build: 2
 	);
 
 	string buildID = string.Concat(
