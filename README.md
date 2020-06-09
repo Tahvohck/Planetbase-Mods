@@ -19,6 +19,12 @@ via the Powershell installation script I've written (UnityModManagerSetup/instal
 just for that purpose. It will provide you with a nice file dialog to select UMM's configuration file and
 make a backup before editing it.
 
+## Utilities
+ - PackFiles.ps1: utility to move output into Output folder
+ - PBModBuildHelper.exe: searches for the first method in a DLL with the [LoaderOptimizationAttribute] and
+   updates spits it out to the console. Used in conjunction with PackFiles.ps1 to update a given mod's
+   info.json.
+
 ## JPFarias
 João Farias was a major contributor to the planetbase modding community back in 2016, writing both the
 original patcher and a plethora of mods. Although their mods were impressive, they used the hacky Redirector
