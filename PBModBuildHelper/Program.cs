@@ -1,5 +1,4 @@
-﻿using CommandLine;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,11 +9,8 @@ namespace PBModBuildHelper
 {
     public class Options
     {
-        [Value(0, Required = true, HelpText = "The path of the assembly to analyze.", MetaName ="Path")]
-        public string Path { get; set; }
-
-        [Option('v', "verbose")]
-        public static bool Verbose { get; set; }
+        public static string Path = "C:/";
+        public static bool Verbose = false;
     }
 
 
@@ -22,31 +18,34 @@ namespace PBModBuildHelper
     {
         static void Main(string[] args)
         {
-            var result = Parser.Default.ParseArguments<Options>(args);
-            result
-                .WithParsed(ParseSucces)
-                .WithNotParsed(ParseFailure);
+            if (args.Contains("-v") || args.Contains("--verbose")) {
+                Options.Verbose = true;
+            }
 
+            if (args.Contains("-V")) {
+                Version v = Assembly.GetExecutingAssembly().GetName().Version;
+                Console.WriteLine(v);
+                Environment.Exit(0);
+            }
+
+            foreach (string s in args) {
+                if (File.Exists(s)) {
+                    Options.Path = s;
+                    break;
+                }
+            }
+            ParseSucces();
             Environment.Exit(0);
         }
 
-        private static void ParseFailure(IEnumerable<Error> obj)
-        {
-            foreach(Error e in obj) {
-                if (e is HelpRequestedError) break;
-                Error($"{e}");
-            }
-            Environment.Exit(1);
-        }
-
-        static void ParseSucces(Options opt)
+        static void ParseSucces()
         {
             BindingFlags filter =
                 BindingFlags.DeclaredOnly |
                 BindingFlags.Static |
                 BindingFlags.Public;
 
-            FileInfo file = new FileInfo(opt.Path);
+            FileInfo file = new FileInfo(Options.Path);
             if (file.Exists) {
                 var assem = Assembly.LoadFrom(file.FullName);
                 var types = assem.GetTypes().ToList();
@@ -57,11 +56,23 @@ namespace PBModBuildHelper
                         $" {allMethods.Count} Methods.");
                 }
 
+                if (Options.Verbose) {
+                    foreach (var method in allMethods) {
+                        Console.WriteLine($"-------------------------" +
+                            $"\n-> {method?.DeclaringType.FullName ?? "none"}." +
+                            $"{method?.Name ?? "none"}");
+                        foreach (Attribute a in method.GetCustomAttributes(false)) {
+                            Console.WriteLine($"\t{a}");
+                        }
+                    }
+                    Console.WriteLine();
+                }
+
                 MethodInfo oneMethod = allMethods.Find(
                     m =>
-                    m.CustomAttributes.ToList().FindAll(
+                    m.GetCustomAttributes(false).ToList().FindAll(
                         a =>
-                        a.AttributeType == typeof(EntryMethodAttribute))
+                        a.GetType().FullName == typeof(EntryMethodAttribute).FullName)
                     .ToList().Count > 0
                     );
 

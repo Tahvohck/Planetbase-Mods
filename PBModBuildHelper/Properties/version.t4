@@ -1,0 +1,11 @@
+﻿<#+
+	Version version = new Version(
+		major: 1,
+		minor: 0,
+		build: 0
+	);
+
+	string buildID = string.Concat(
+		DateTime.UtcNow.ToString("yy"),
+		(int)(DateTime.UtcNow - new DateTime(DateTime.UtcNow.Year,1,1)).TotalDays);
+#>
