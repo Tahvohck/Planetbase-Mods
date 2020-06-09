@@ -8,6 +8,8 @@ param (
 	[switch]$WhatIf = $false
 )
 
+########################################
+# Configuration
 $Errors = @{
 	BadDirectory = 2
 }
@@ -18,6 +20,9 @@ $copyItems = @(
 )
 $PBMBH = get-command "$SolutionDir/Output/PBMBH/PBModBuildHelper.exe" -ea SilentlyContinue
 
+
+########################################
+# Code start
 if (!(Test-Path $SolutionDir)) {
 	exit $Errors.BadDirectory }
 if ($OutputDir -eq "" -or !(Test-Path $OutputDir)) {
