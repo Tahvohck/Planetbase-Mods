@@ -11,11 +11,12 @@ param (
 $Errors = @{
 	BadDirectory = 2
 }
+$MetaFile = "Info.json"
 $copyItems = @(
 	"$OutputDir/$TargetFileName$TargetFileExt",
-	"$OutputDir/Properties/Info.json"
+	"$OutputDir/Properties/$MetaFile"
 )
-
+$PBMBH = get-command "$SolutionDir/Output/PBMBH/PBModBuildHelper.exe" -ea SilentlyContinue
 
 if (!(Test-Path $SolutionDir)) {
 	exit $Errors.BadDirectory }
@@ -48,4 +49,17 @@ foreach ($file in $copyItems) {
 	} catch [Management.Automation.ItemNotFoundException] {
 		Write-Host $_
 	}
+}
+
+if ($PBMBH -ne $null -and (Test-Path "$workingDir/$MetaFile")) {
+    $entryMethod = & $PBMBH $copyItems[0]
+    if ($entryMethod -notlike "ERROR*") {
+        $json = gc "$workingDir/$MetaFile" | ConvertFrom-Json
+        $json.EntryMethod = $entryMethod
+        $json | ConvertTo-Json | out-file -encoding ascii "$workingDir/$MetaFile"
+    } else {
+        Write-Error $entryMethod
+    }
+} else {
+    Write-Host "PBMBH missing."
 }
