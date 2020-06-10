@@ -56,15 +56,22 @@ foreach ($file in $copyItems) {
 	}
 }
 
-if ($PBMBH -ne $null -and (Test-Path "$workingDir/$MetaFile")) {
-    $entryMethod = & $PBMBH $copyItems[0]
-    if ($entryMethod -notlike "ERROR*") {
-        $json = gc "$workingDir/$MetaFile" | ConvertFrom-Json
-        $json.EntryMethod = $entryMethod
-        $json | ConvertTo-Json | out-file -encoding ascii "$workingDir/$MetaFile"
+$dll = $copyItems[0]
+$infofile = "$workingDir/$MetaFile"
+if (Test-Path $infofile) {
+    $json = gc $infofile | ConvertFrom-Json
+    $json.AssemblyName = "$TargetFileName$TargetFileExt"
+
+    if ($PBMBH -ne $null) {
+        $entryMethod = & $PBMBH  $dll
+        if ($entryMethod -notlike "ERROR*") {
+            $json.EntryMethod = $entryMethod
+        } else {
+            Write-Error $entryMethod
+        }
     } else {
-        Write-Error $entryMethod
+        Write-Host "PBMBH missing. Auto EntryMethod unable to run."
     }
-} else {
-    Write-Host "PBMBH missing."
+
+    $json | ConvertTo-Json | out-file -encoding ascii $infofile
 }
