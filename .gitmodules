@@ -19,3 +19,6 @@
 [submodule "JPF_CameraOverhaul"]
 	path = JPF_CameraOverhaul
 	url = https://github.com/Tahvohck/Planetbase-CameraOverhaul.git
+[submodule "JPF_SkipIntro"]
+	path = JPF_SkipIntro
+	url = ./JPF_SkipIntro

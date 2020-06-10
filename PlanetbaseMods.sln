@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraOverhaul", "JPF_Camer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBModBuildHelper", "PBModBuildHelper\PBModBuildHelper.csproj", "{1913B66B-A2F8-45B4-8210-8D5086CFB0FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkipIntro", "JPF_SkipIntro\SkipIntro.csproj", "{20F7FA59-5346-49F7-BFA1-C63461F00052}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{1913B66B-A2F8-45B4-8210-8D5086CFB0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1913B66B-A2F8-45B4-8210-8D5086CFB0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1913B66B-A2F8-45B4-8210-8D5086CFB0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F7FA59-5346-49F7-BFA1-C63461F00052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F7FA59-5346-49F7-BFA1-C63461F00052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F7FA59-5346-49F7-BFA1-C63461F00052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F7FA59-5346-49F7-BFA1-C63461F00052}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D00E2232-C17C-44D9-AB0A-14AA331E5AC6} = {0C14CECF-82E2-4DB7-8949-434382E9A293}
 		{6310AE4E-9ABE-450A-8871-EBAA9BF3A577} = {0C14CECF-82E2-4DB7-8949-434382E9A293}
+		{20F7FA59-5346-49F7-BFA1-C63461F00052} = {0C14CECF-82E2-4DB7-8949-434382E9A293}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB5FA77A-8E2A-48DE-9BAF-DA64EB081268}

@@ -47,7 +47,10 @@ progress:
  - [ ] Free Furnishing
  - [ ] Landing Control
  - [ ] Power Saver
- - [ ] SkipIntro
+ - [x] SkipIntro
+   - [x] MVP
+   - [ ] Bugfixes
+   - [ ] Polish
  
 Patcher and Redirector will explicitly not be updated, as the entire point of this project is to remove
 their need.
