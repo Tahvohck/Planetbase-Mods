@@ -49,7 +49,7 @@ progress:
  - [ ] Power Saver
  - [x] SkipIntro
    - [x] MVP
-   - [ ] Bugfixes
+   - [x] Bugfixes
    - [ ] Polish
  
 Patcher and Redirector will explicitly not be updated, as the entire point of this project is to remove
