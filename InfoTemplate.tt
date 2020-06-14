@@ -1,6 +1,5 @@
 <#@ template debug="false" hostspecific="false" language="C#" #>
 <#@ include file="version.t4" #>
-<#@ include file="../../Globals.t4" #>
 <#@ output extension=".json" #>
 {
     "EntryMethod":  "FALSE-STUB",
@@ -8,8 +7,8 @@
     "AssemblyName": "FALSE-STUB",
     "Repository":   "FALSE-STUB",
     "HomePage":     "FALSE-STUB",
-    "Author":       "<#= this.Author #>",
-    "GameVersion":  "<#= this.GameVersion #>",
+    "Author":       "FALSE-STUB",
+    "GameVersion":  "FALSE-STUB",
 
     "ID":           "MOD-ID",
     "DisplayName":  "MOD-Display",
