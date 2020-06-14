@@ -86,5 +86,5 @@ if (Test-Path $infofile) {
 
     $json | ConvertTo-Json | out-file -encoding ascii $infofile
 } else {
-    Write-Host "No Info file, mod won't load!"
+    Write-Host "No Info file, mod $Project won't load!"
 }
