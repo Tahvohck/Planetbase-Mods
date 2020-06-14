@@ -5,12 +5,14 @@
     "ID":           "UnlockMoreAtStart",
     "EntryMethod":  "FALSE-STUB",
     "Version":      "<#= this.version #>.<#= this.buildID #>",
-    "AssemblyName": "",
+    "AssemblyName": "FALSE-STUB",
+    "Repository":   "FALSE-STUB",
+    "HomePage":     "FALSE-STUB",
     
     "Author":       "Tahvohck",
     "DisplayName":  "Remove requirements from buildings",
     "Requirements": ["SomeMod-1.0.0", "AnotherMod"],
     "LoadAfter":    [],
-    "ManagerVersion": "1.0.0",
-    "GameVersion": "1.0.0"
+    "GameVersion":  "1.0.0",
+    "ManagerVersion": "1.0.0"
 }
