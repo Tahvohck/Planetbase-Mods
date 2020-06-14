@@ -67,10 +67,13 @@ if (Test-Path $infofile) {
     $json | Add-Member "Author" "$Author" -Force
     $json | Add-Member "GameVersion" "$GameVersion"
 
-    $remote = git remote get-url origin
+    $remote = git remote get-url origin 2> $null
     if ($remote -notlike "fatal:*"){
         $json | Add-Member "HomePage" "$remote" -Force
         $json | Add-Member "Repository" "$remote" -Force
+    } else {
+        $json = $json | Select -Property * -Exclude HomePage,Repository
+        Write-Host "Project $Project has no remote."
     }
 
     if ($PBMBH -ne $null) {
