@@ -1,0 +1,16 @@
+<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ include file="version.t4" #>
+<#@ output extension=".json" #>
+{
+    "ID":           "UnlockMoreAtStart",
+    "EntryMethod":  "FALSE-STUB",
+    "Version":      "<#= this.version #>.<#= this.buildID #>",
+    "AssemblyName": "",
+    
+    "Author":       "Tahvohck",
+    "DisplayName":  "Remove requirements from buildings",
+    "Requirements": ["SomeMod-1.0.0", "AnotherMod"],
+    "LoadAfter":    [],
+    "ManagerVersion": "1.0.0",
+    "GameVersion": "1.0.0"
+}
