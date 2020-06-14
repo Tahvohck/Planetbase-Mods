@@ -10,14 +10,17 @@ param (
 
 ########################################
 # Configuration
-$Errors = @{
-	BadDirectory = 2
-}
+$Author = "Tahvohck"
+$GameVersion = ([Version]"1.3.7").ToString(3)   # Just to make sure that the Version is consistent
 $MetaFile = "Info.json"
 $copyItems = @(
 	"$OutputDir/$TargetFileName$TargetFileExt",
 	"$OutputDir/Properties/$MetaFile"
 )
+$Errors = @{
+	BadDirectory = 2
+}
+
 $PBMBH = get-command "$SolutionDir/Output/PBMBH/PBModBuildHelper.exe" -ea SilentlyContinue
 
 
@@ -60,12 +63,20 @@ $dll = $copyItems[0]
 $infofile = "$workingDir/$MetaFile"
 if (Test-Path $infofile) {
     $json = gc $infofile | ConvertFrom-Json
-    $json.AssemblyName = "$TargetFileName$TargetFileExt"
+    $json | Add-Member "AssemblyName" "$TargetFileName$TargetFileExt" -Force
+    $json | Add-Member "Author" "$Author" -Force
+    $json | Add-Member "GameVersion" "$GameVersion"
+
+    $remote = git remote get-url origin
+    if ($remote -notlike "fatal:*"){
+        $json | Add-Member "HomePage" "$remote" -Force
+        $json | Add-Member "Repository" "$remote" -Force
+    }
 
     if ($PBMBH -ne $null) {
         $entryMethod = & $PBMBH  $dll
         if ($entryMethod -notlike "ERROR*") {
-            $json.EntryMethod = $entryMethod
+            $json | Add-Member "EntryMethod" "$entryMethod" -Force
         } else {
             Write-Error $entryMethod
         }
@@ -74,4 +85,6 @@ if (Test-Path $infofile) {
     }
 
     $json | ConvertTo-Json | out-file -encoding ascii $infofile
+} else {
+    Write-Host "No Info file, mod won't load!"
 }
