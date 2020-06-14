@@ -1,18 +1,19 @@
 <#@ template debug="false" hostspecific="false" language="C#" #>
 <#@ include file="version.t4" #>
+<#@ include file="../../Globals.t4" #>
 <#@ output extension=".json" #>
 {
-    "ID":           "UnlockMoreAtStart",
     "EntryMethod":  "FALSE-STUB",
     "Version":      "<#= this.version #>.<#= this.buildID #>",
     "AssemblyName": "FALSE-STUB",
     "Repository":   "FALSE-STUB",
     "HomePage":     "FALSE-STUB",
-    
-    "Author":       "Tahvohck",
-    "DisplayName":  "Remove requirements from buildings",
+    "Author":       "<#= this.Author #>",
+    "GameVersion":  "<#= this.GameVersion #>",
+
+    "ID":           "MOD-ID",
+    "DisplayName":  "MOD-Display",
     "Requirements": ["SomeMod-1.0.0", "AnotherMod"],
     "LoadAfter":    [],
-    "GameVersion":  "1.0.0",
     "ManagerVersion": "1.0.0"
 }

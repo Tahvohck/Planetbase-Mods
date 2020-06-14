@@ -1,0 +1,8 @@
+<#+
+    string Author = "Tahvohck";
+    Version GameVersion = new Version(
+        major: 1,
+        minor: 3,
+        build: 7
+    );
+#>
