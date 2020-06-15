@@ -22,3 +22,6 @@
 [submodule "JPF_SkipIntro"]
 	path = JPF_SkipIntro
 	url = ./JPF_SkipIntro
+[submodule "JPF_BuildingAligner"]
+	path = JPF_BuildingAligner
+	url = ./JPF_BuildingAligner
