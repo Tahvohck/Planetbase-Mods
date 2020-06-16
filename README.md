@@ -36,7 +36,7 @@ progress:
  - [ ] Auto Alerts
  - [x] Auto Connections
  - [ ] Auto Rotate Buildings
- - [ ] Building Aligner
+ - [x] Building Aligner
  - [ ] Camera Overhaul
    - [x] Basic integration (works but with issues)
    - [x] Fix skybox
