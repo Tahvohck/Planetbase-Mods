@@ -65,7 +65,7 @@ if (Test-Path $infofile) {
     $json = gc $infofile | ConvertFrom-Json
     $json | Add-Member "AssemblyName" "$TargetFileName$TargetFileExt" -Force
     $json | Add-Member "Author" "$Author" -Force
-    $json | Add-Member "GameVersion" "$GameVersion"
+    $json | Add-Member "GameVersion" "$GameVersion" -Force
 
     $remote = git remote get-url origin 2> $null
     if ($remote -notlike "fatal:*"){
