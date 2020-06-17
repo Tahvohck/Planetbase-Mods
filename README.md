@@ -48,8 +48,6 @@ progress:
  - [ ] Landing Control
  - [ ] Power Saver
  - [x] SkipIntro
-   - [x] MVP
-   - [x] Bugfixes
    - [ ] Polish
  
 Patcher and Redirector will explicitly not be updated, as the entire point of this project is to remove
