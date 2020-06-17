@@ -25,3 +25,6 @@
 [submodule "JPF_BuildingAligner"]
 	path = JPF_BuildingAligner
 	url = ./JPF_BuildingAligner
+[submodule "JPF_AutoRotateBuildings"]
+	path = JPF_AutoRotateBuildings
+	url = ./JPF_AutoRotateBuildings

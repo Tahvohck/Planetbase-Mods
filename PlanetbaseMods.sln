@@ -14,7 +14,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2CB6ABBB-B002-461B-9824-7D3A905AB9C5}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
-		UnlockAllAtStart\Properties\Info.json = UnlockAllAtStart\Properties\Info.json
 		InfoTemplate.tt = InfoTemplate.tt
 		UnityModManagerSetup\install-planetbase-to-umm.ps1 = UnityModManagerSetup\install-planetbase-to-umm.ps1
 		PackFiles.ps1 = PackFiles.ps1
@@ -34,6 +33,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBModBuildHelper", "PBModBuildHelper\PBModBuildHelper.csproj", "{B3F0E244-8835-4F89-8C30-BA3C65C2509E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkipIntro", "JPF_SkipIntro\SkipIntro.csproj", "{20F7FA59-5346-49F7-BFA1-C63461F00052}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRotateBuildings", "JPF_AutoRotateBuildings\AutoRotateBuildings.csproj", "{CA140737-5002-4562-8CD1-6C97F44A6922}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +82,10 @@ Global
 		{20F7FA59-5346-49F7-BFA1-C63461F00052}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20F7FA59-5346-49F7-BFA1-C63461F00052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20F7FA59-5346-49F7-BFA1-C63461F00052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA140737-5002-4562-8CD1-6C97F44A6922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA140737-5002-4562-8CD1-6C97F44A6922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA140737-5002-4562-8CD1-6C97F44A6922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA140737-5002-4562-8CD1-6C97F44A6922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +95,7 @@ Global
 		{04E8F7CA-E9BF-4B30-992A-451BE1A3182F} = {0C14CECF-82E2-4DB7-8949-434382E9A293}
 		{6310AE4E-9ABE-450A-8871-EBAA9BF3A577} = {0C14CECF-82E2-4DB7-8949-434382E9A293}
 		{20F7FA59-5346-49F7-BFA1-C63461F00052} = {0C14CECF-82E2-4DB7-8949-434382E9A293}
+		{CA140737-5002-4562-8CD1-6C97F44A6922} = {0C14CECF-82E2-4DB7-8949-434382E9A293}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB5FA77A-8E2A-48DE-9BAF-DA64EB081268}

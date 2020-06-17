@@ -35,7 +35,7 @@ progress:
 
  - [ ] Auto Alerts
  - [x] Auto Connections
- - [ ] Auto Rotate Buildings
+ - [x] Auto Rotate Buildings
  - [x] Building Aligner
  - [ ] Camera Overhaul
    - [x] Basic integration (works but with issues)
