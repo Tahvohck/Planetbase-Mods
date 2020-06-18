@@ -3,7 +3,7 @@
 	url = https://github.com/Tahvohck/Planetbase_Modhooker.git
 [submodule "MoreResourcesAtStart"]
 	path = MoreResourcesAtStart
-	url = ./MoreResourcesAtStart
+	url = https://github.com/Tahvohck/Planetbase-MoreResourcesAtStart.git
 [submodule "BiggerFoodMachines"]
 	path = BiggerFoodMachines
 	url = https://github.com/Tahvohck/Planetbase-BiggerFoodMachines.git
@@ -21,10 +21,10 @@
 	url = https://github.com/Tahvohck/Planetbase-CameraOverhaul.git
 [submodule "JPF_SkipIntro"]
 	path = JPF_SkipIntro
-	url = ./JPF_SkipIntro
+	url = https://github.com/Tahvohck/Planetbase-SkipIntro.git
 [submodule "JPF_BuildingAligner"]
 	path = JPF_BuildingAligner
-	url = ./JPF_BuildingAligner
+	url = https://github.com/Tahvohck/Planetbase-BuildingAligner.git
 [submodule "JPF_AutoRotateBuildings"]
 	path = JPF_AutoRotateBuildings
-	url = ./JPF_AutoRotateBuildings
+	url = https://github.com/Tahvohck/Planetbase-AutoRotateBuildings.git
